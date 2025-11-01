@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Escudo do Mestre</title>
+  <script type="module" crossorigin src="./assets/index-oIcEaNkf.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-C5pix8Wd.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/icon.svg" alt="escudo" class="icon" />
+      <h1>Escudo do Mestre</h1>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab-button active" data-tab="notes">📜 Anotações</button>
+      <button class="tab-button" data-tab="initiative">⚔️ Iniciativa</button>
+      <button class="tab-button" data-tab="dice">🎲 Rolagens</button>
+    </nav>
+
+    <main>
+      <section id="notes" class="tab-content active">
+        <textarea id="notesArea" placeholder="Suas anotações secretas..."></textarea>
+        <div class="row">
+          <button id="exportNotes">Exportar</button>
+          <button id="importNotes">Importar</button>
+        </div>
+      </section>
+
+      <section id="initiative" class="tab-content">
+        <ul id="initiativeList"></ul>
+        <div class="initiative-controls">
+          <input id="initiativeInput" placeholder="Nome da criatura" />
+          <button id="addInitiative">Adicionar</button>
+          <button id="clearInitiative">Limpar</button>
+          <button id="sortInitiative">Ordenar</button>
+        </div>
+      </section>
+
+      <section id="dice" class="tab-content">
+        <div class="dice-row">
+          <button data-dice="4">d4</button>
+          <button data-dice="6">d6</button>
+          <button data-dice="8">d8</button>
+          <button data-dice="10">d10</button>
+          <button data-dice="12">d12</button>
+          <button data-dice="20">d20</button>
+        </div>
+        <div id="diceResult">🎲 Clique em um dado</div>
+        <div class="row">
+          <label><input id="notifyOnRoll" type="checkbox" /> Notificar no Owlbear</label>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Salvo localmente no navegador</small>
+    </footer>
+  </div>
+</body>
+</html>

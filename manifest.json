@@ -1,0 +1,14 @@
+{
+  "manifest_version": 1,
+  "name": "Escudo do Mestre",
+  "version": "1.0.0",
+  "author": "Luis Curseiro",
+  "description": "Painel de apoio ao Mestre no Owlbear Rodeo: anotações, iniciativa e rolagens.",
+  "action": {
+    "title": "Escudo do Mestre",
+    "icon": "/icon.svg",
+    "popover": "index.html",
+    "height": 600,
+    "width": 500
+  }
+}

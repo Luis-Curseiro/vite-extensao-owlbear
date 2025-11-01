@@ -1,0 +1,38 @@
+:root{
+  --bg: #111;
+  --panel: #1f1f24;
+  --muted: #cfcfcf;
+  --accent: #2563eb;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background:var(--bg);
+  color:var(--muted);
+  padding:12px;
+}
+.container{
+  width:460px;
+  background:var(--panel);
+  border-radius:10px;
+  padding:14px;
+}
+header{display:flex;align-items:center;gap:12px}
+.icon{width:36px;height:36px}
+h1{margin:0;font-size:20px}
+.tabs{display:flex;gap:6px;margin:12px 0}
+.tab-button{background:#2b2b30;border:none;padding:6px 10px;border-radius:6px;color:var(--muted);cursor:pointer}
+.tab-button.active{background:var(--accent);color:white}
+.tab-content{display:none}
+.tab-content.active{display:block}
+#notesArea{width:100%;min-height:160px;background:#101010;border-radius:6px;border:none;padding:8px;color:var(--muted)}
+.row{display:flex;gap:8px;margin-top:8px}
+button{background:var(--accent);color:white;padding:6px 10px;border-radius:6px;border:none;cursor:pointer}
+.initiative-controls{display:flex;gap:8px;margin-top:8px}
+#initiativeList{list-style:none;padding:0;margin:0}
+#initiativeList li{display:flex;justify-content:space-between;background:#151518;padding:8px;border-radius:6px;margin-bottom:6px}
+.dice-row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+#diceResult{margin-top:10px;font-weight:600}
+footer{margin-top:12px;text-align:center;color:#999;font-size:12px}
