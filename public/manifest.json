@@ -5,6 +5,11 @@
   "author": "Luis Curseiro",
   "description": "Uma extensão para apoiar mestres de RPG no Owlbear Rodeo",
   "icon": "/vite.svg",
-  "homepage_url": "https://luis-curseiro.github.io/vite-extensao-owlbear/",
-  "background_url": "index.html"
+  "action": {
+    "title": "Escudo do Mestre",
+    "icon": "/vite.svg",
+    "popover": "index.html",
+    "height": 600,
+    "width": 400
+  }
 }
